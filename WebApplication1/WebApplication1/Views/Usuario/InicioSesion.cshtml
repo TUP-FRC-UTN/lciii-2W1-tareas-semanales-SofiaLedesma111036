@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.Usuario
+@{
+    ViewBag.Title = "InicioSesion";
+
+    ViewBag.Title = "otro titulo";
+}
+
+<h2>Loguearse</h2>
+<form>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div class="form-group">
+                <label>Usuario</label>
+                @Html.TextBoxFor(x => x.NombreUsuario, htmlAttributes: new { @id = "txtUsuario" })
+            </div>
+            <div class="form-group">
+                <label>Contraseña</label>
+                @Html.PasswordFor(x => x.Password, htmlAttributes: new { @id = "txtPassword" })
+            </div>
+            <input type="submit" value="ingresar" class="btn btn-primary" />
+        </div>
+
+        <div class="col-3"></div>
+
+    </div>
+</form>
+
